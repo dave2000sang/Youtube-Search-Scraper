@@ -19,3 +19,11 @@ and then POST requests a background python script that finally scrapes the web-s
 Here's an example where I input "Linkin Park", telling the program to scrape www.youtube.com with "Linkin Park" in the search bar.
 
 ![img](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/ExampleWebPage.png)
+
+- After clicking "Submit" button on the web page, it sends "Linkin Park" to a node.js server from the app.js script through a POST
+request. 
+- The server receives this request (using Express module) and sends "Linkin Park" to the python script running in the background
+through a different POST request running on a different port number.
+- Finally, the python script runs and outputs this lovely .csv file
+
+![img2](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/LinkinParkCSV.PNG)

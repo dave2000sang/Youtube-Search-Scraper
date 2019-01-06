@@ -7,7 +7,7 @@ and then POST requests a background python script that finally scrapes the web-s
 - Outputs a .csv file containing Names of all YouTube videos and their corresponding links
 
 
-Future Extensions of Project:
+## Future Extensions of Project:
 - Automate entire procedure (run everything in background?)
 - Display .csv results onto web page
 - Beautify front-end web page
@@ -15,4 +15,7 @@ Future Extensions of Project:
 - Add download links to scraped links
 
 
-Example Usage:
+## Example Usage:
+Here's an example where I input "Linkin Park", telling the program to scrape www.youtube.com with "Linkin Park" in the search bar.
+
+![img](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/ExampleWebPage.png)

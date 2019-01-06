@@ -24,11 +24,9 @@ locallink = "http://localhost:3001/toPython"
 # Get from Node.js server
 r_search = requests.get(locallink)
 
-if r_search == None:
-    print ("NULLLL")
 
 # print (response.status_code)
-
+    
 if r_search.status_code != 200 or r_search.text == None:
     print("Request failed")
 

@@ -1,6 +1,6 @@
 # Youtube-Search-Scraper
 - YouTube search scraper from www.youtube.com. 
-- User enters search item on the web page (running on localhost) which is connected to a node.js server (by Express API) 
+- User enters search item on the web page (running on localhost) which is connected to a node.js server (by Express web framework) 
 and then POST requests a background python script that finally scrapes the web-site generated from the user input.
 - Outputs a .csv file containing Names of all YouTube videos and their corresponding links
 
@@ -12,7 +12,7 @@ Here's an example where I input "Linkin Park", telling the program to scrape www
 
 - After clicking "Submit" button on the web page, it sends "Linkin Park" to a node.js server from the app.js script through a POST
 request. 
-- The server receives this request (using Express module) and sends "Linkin Park" to the python script running in the background
+- The server receives this request (using Express API) and sends "Linkin Park" to the python script running in the background
 through a different POST request running on a different port number.
 - Finally, the python script runs and outputs this lovely .csv file (with links to the first page of YouTube videos)
 

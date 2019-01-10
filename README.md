@@ -1,7 +1,7 @@
 # Youtube-Search-Scraper
 - Scrapes web page on www.youtube.com from user-entered search item and generates results in a .csv file
 - User enters search item on the web page (running on localhost) which is connected to a node.js server (by Express web framework) 
-and then POST requests a background python script that finally scrapes the web-site generated from the user input.
+and then POST requests a background python script that uses Beautiful Soup library to scrape the web-site generated from the user input.
 - Outputs a .csv file containing Names of all YouTube videos and their corresponding links
 
 

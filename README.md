@@ -10,11 +10,11 @@ Here's an example where I input "Linkin Park", telling the program to scrape www
 
 ![img](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/ExampleWebPage.png)
 
-- After clicking "Submit" button on the web page, it sends "Linkin Park" to a node.js server from the app.js script through a POST
+- After clicking "Submit" button on the web page, it sends "Linkin Park" to a node.js server from the app.js script through an HTTP POST
 request. 
 - The server receives this request (using Express API) and sends "Linkin Park" to the python script running in the background
 through a different POST request running on a different port number.
-- Finally, the python script runs and outputs this lovely .csv file (with links to the first page of YouTube videos)
+- Finally, the python script outputs this lovely .csv file (with links to the first page of YouTube videos from searching "Linkin Park")
 
 ![img2](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/LinkinParkCSV.PNG)
 

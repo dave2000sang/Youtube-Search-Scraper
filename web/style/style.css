@@ -1,0 +1,64 @@
+
+header, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  background-color: rgb(255, 134, 134);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+  width: 30px;
+  height: 22px;
+  vertical-align: text-bottom;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+
+  /*Focus Border*/
+  outline: none;
+}
+
+input[type=submit] {
+  font-size: 15px;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(194, 113, 113);
+  color:white;
+}
+
+fieldset {
+  color: rgb(92, 23, 23);
+  border: 2px solid black;
+}
+
+table th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgb(75, 25, 25);
+  color: white;
+}
+
+#resultsTable tr:nth-child(even) {
+  background-color: #ffa2a2;
+}
+
+#resultsTable tr:hover {
+  background-color: rgb(255, 216, 216);
+}

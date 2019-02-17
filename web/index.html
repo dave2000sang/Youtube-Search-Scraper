@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html>
     <header>
-        <title>Youtube Web Scraper</title>
-        <h1>Welcome to my Youtube Search Scraper!</h1>
-    </header>
-    
-    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://d3js.org/d3.v5.js"></script>
         <script src="scripts/main.js"></script>
-        <form action="http://localhost:3000/action" method="post" target="_blank">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        
+        <title>Youtube Web Scraper</title>
+        <h3>Welcome to my Youtube <img src="style/logo.png"> Search Scraper!</h3>
+        
+    </header>
+    <body>
+            
+        <div id="result"></div>
+        
+        <form action="http://localhost:3001/action" method="post" target="_blank" 
+           onsubmit="SearchProcess(); return false;" id="myform" autocomplete="off">
             <fieldset>
-                <legend>Enter your YouTube Search</legend>
-                <input type="text" name="search"><br><br>
+
+                <legend>What do you want to Search?</legend>
+                <input type="text" name="search" id="userInput"><br><br>
                 <input type="submit" value="Submit">
+                
             </fieldset>
             
         </form>
+
+        <p id="showResults"></p>
+
+        <table id="resultsTable" style="width:100%">
+            <tr id="Headings">
+                <th>Video Name</th>
+                <th>Video Link</th>                
+            </tr>
+        </table>
     </body>
 </html>

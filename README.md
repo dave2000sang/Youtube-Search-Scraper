@@ -8,15 +8,11 @@ and then automatically runs a background python script that uses Beautiful Soup 
 ## Example Usage:
 Here's an example where I input "Linkin Park", telling the program to scrape www.youtube.com with "Linkin Park" in the search bar.
 
-![img](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/ExampleWebPage.png)
+![img](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/second.png)
 
-- After clicking "Submit" button on the web page, it sends "Linkin Park" to a node.js server from the app.js script through an HTTP POST
-request. 
-- The server receives this request (using Express API) and sends "Linkin Park" to the python script running in the background
-through a different POST request running on a different port number.
-- Finally, the python script outputs this lovely .csv file (with links to the first page of YouTube videos from searching "Linkin Park")
-
-![img2](https://github.com/dave2000sang/Youtube-Search-Scraper/blob/master/README%20files/LinkinParkCSV.PNG)
+- After clicking "Submit" button on the web page, an AJAX call sends "Linkin Park" to a Node server from the app.js script. 
+- The server receives this request (using Express API) and calls a Python script, sending "Linkin Park".
+- Finally, the python script running beautiful soup library scrapes the YouTube site searching "Linkin Park" and returns an array of JSON objects to the server, which sends it to the frontend client and is displayed in a table.
 
 
 ## Get Started:

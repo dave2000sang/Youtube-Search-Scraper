@@ -35,13 +35,3 @@ function processSearch(str) {
     }
     return ans;
 }
-/*
-// testing jQuery
-$(document).ready(function() {
-    $('#result').load('test.html');
-});
-// testing d3
-d3.csv("/results.csv").then(function(data) {
-    console.log(data[7]);
-});
-*/
